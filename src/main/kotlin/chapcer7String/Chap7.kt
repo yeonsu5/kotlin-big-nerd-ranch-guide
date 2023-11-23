@@ -42,5 +42,6 @@ private fun placeOrder(menuData: String) {
     }
     println(phrase)
 
+    println("작업")
 
 }
