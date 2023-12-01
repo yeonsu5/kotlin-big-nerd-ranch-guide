@@ -1,4 +1,4 @@
-package chapter4Function
+package chapter1to10.chapter4Function
 
 fun main(args: Array<String>) {
     val name = "마드리갈"

@@ -1,4 +1,4 @@
-package chapter5AnonymousFun
+package chapter1to10.chapter5AnonymousFun
 
 fun main() {
     println(

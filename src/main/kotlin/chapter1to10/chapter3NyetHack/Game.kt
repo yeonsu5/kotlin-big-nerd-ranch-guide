@@ -1,4 +1,4 @@
-package chapter3NyetHack
+package chapter1to10.chapter3NyetHack
 
 fun main(args: Array<String>) {
     val name = "마드리갈"

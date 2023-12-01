@@ -1,4 +1,4 @@
-package chapcer7String
+package chapter1to10.chapcer7String
 
 const val TAVERN_NAME = "Taernyl's Folly"
 fun main() {

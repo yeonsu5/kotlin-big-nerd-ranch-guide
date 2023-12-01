@@ -1,4 +1,4 @@
-package chapter8Number
+package chapter1to10.chapter8Number
 
 import kotlin.math.roundToInt
 

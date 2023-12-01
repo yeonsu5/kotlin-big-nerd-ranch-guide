@@ -1,4 +1,4 @@
-package chapcer7String
+package chapter1to10.chapcer7String
 
 val capitalA: Char = 'A'
 val unicodeCapitalA: Char = '\u0041'

@@ -1,4 +1,4 @@
-package chapter6NullSafetyAndException
+package chapter1to10.chapter6NullSafetyAndException
 
 fun main() {
 //    var signatureDrink = "맥주"

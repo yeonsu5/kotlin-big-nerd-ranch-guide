@@ -1,4 +1,4 @@
-package chapter6NullSafetyAndException
+package chapter12Class
 
 import java.lang.Exception
 
