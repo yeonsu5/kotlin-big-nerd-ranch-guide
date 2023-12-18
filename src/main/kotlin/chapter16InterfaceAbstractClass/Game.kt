@@ -33,6 +33,7 @@ object Game {
 
     private fun fight() = currentRoom.monster?.let {
         while (player.healthPoints > 0 && it.healthPoints > 0) {
+            slay(it)
             Thread.sleep(1000)
         }
 
@@ -53,8 +54,10 @@ object Game {
             exitProcess(0)
         }
 
-
-
+        if (monster.healthPoints <= 0) {
+            println(">>> ${monster.name} -- 격퇴됨! <<<<")
+            currentRoom.monster = null
+        }
     }
 
     fun play() {
@@ -75,7 +78,7 @@ object Game {
     ) {
         println(
             "(Aura: ${player.auraColor()}) " +
-                "(Blessed: ${if (player.isBlessed) "YES" else "NO"})",
+                    "(Blessed: ${if (player.isBlessed) "YES" else "NO"})",
         )
         println("${player.name} ${player.formatHealthStatus()}")
     }
@@ -86,6 +89,7 @@ object Game {
         val argument = input.split(" ").getOrElse(1) { "" }
 
         fun processCommand() = when (command.lowercase(Locale.getDefault())) {
+            "fight" -> fight()
             "move" -> move(argument)
             else -> commandNotFound()
         }
